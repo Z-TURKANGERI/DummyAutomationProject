@@ -5,9 +5,9 @@
     <classes>
       <class name="com.tutorialsninja.qa.testCases.TestSearch">
         <methods>
+          <include name="verifySearchingWithExistingMultipleProductName"/>
           <include name="initilization"/>
           <include name="tearDown"/>
-          <include name="verifySearchingForProductAfterLoginToApplication"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestSearch -->
     </classes>

@@ -22,6 +22,10 @@ public class SearchResultPageObjects {
 	@FindBy(xpath = "//a[text()= 'iMac']") private WebElement itemSearched;
 	@FindBy(xpath = "//p[contains(text(),'There is no product that matches the search criter')]") private WebElement messageOfNoProduct;
 	
+	@FindBy(id = "input-search") private WebElement searchCriteriaTextBox;
+	@FindBy(id = "button-search") private WebElement searchButtonCriteria;
+	@FindBy(id = "description") private WebElement productDescriptionCheckbox;
+	
 	public String itemSearched() {
 		return itemSearched.getText();
 	}
@@ -29,6 +33,21 @@ public class SearchResultPageObjects {
 	public String messageOfNoProduct() {
 		return messageOfNoProduct.getText();
 	}
+	
+	public WebElement searchCriteriaTextBox() {
+		return searchCriteriaTextBox;
+	}
+	
+	public WebElement searchButtonCriteria() {
+		return searchButtonCriteria;
+	}
+	
+	public WebElement productDescriptionCheckbox() {
+		return productDescriptionCheckbox;
+	}
+	
+
+		
 	
 	
 	

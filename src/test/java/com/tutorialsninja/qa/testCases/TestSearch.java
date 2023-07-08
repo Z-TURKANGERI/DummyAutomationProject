@@ -1,6 +1,7 @@
 package com.tutorialsninja.qa.testCases;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -60,9 +61,9 @@ public class TestSearch extends conftest {
 		Assert.assertEquals(searchResultPage.messageOfNoProduct(), testData.getProperty("noProductResultMessage"));
 	}
 
-	/*@Test
+	@Test(priority=4)
 	public void verifySearchingForProductAfterLoginToApplication() {
-		// HomePageObjects homePage = new HomePageObjects(driver);
+		HomePageObjects homePage = new HomePageObjects(driver);
 		loginPage = homePage.accountLogin();
 		loginPage.Email().sendKeys(config.getProperty("validEmail"));
 		loginPage.password().sendKeys(config.getProperty("validPassword"));
@@ -70,12 +71,40 @@ public class TestSearch extends conftest {
 
 		Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
 
-		homePage = new HomePageObjects(driver);
+		homePage = PageFactory.initElements(driver, HomePageObjects.class);
 		homePage.searchTextBox().sendKeys(testData.getProperty("ExistingProduct"));
 		searchResultPage = homePage.searchButton();
 
 		Assert.assertEquals(searchResultPage.itemSearched(), testData.getProperty("ExistingProduct"));
+	}
+	
+	@Test(priority = 5)
+	public void verifySearchingWithSearchingCriteria() {
+		HomePageObjects homePage = new HomePageObjects(driver);
+		searchResultPage = homePage.searchButton();
+		searchResultPage.searchCriteriaTextBox().sendKeys(testData.getProperty("ExistingProduct"));
+		searchResultPage.searchButtonCriteria().click();
+		
+		Assert.assertEquals(searchResultPage.itemSearched(), testData.getProperty("ExistingProduct"));
+	}
+	
+	@Test(priority=6)
+	public void verifySearchingUsingTextFromProductDescription() {
+		HomePageObjects homePage = new HomePageObjects(driver);
+		searchResultPage = homePage.searchButton();
+		searchResultPage.searchCriteriaTextBox().sendKeys(testData.getProperty("ProductDescriptionItem"));
+		searchResultPage.productDescriptionCheckbox().click();
+		searchResultPage.searchButtonCriteria().click();
+		
+		Assert.assertEquals(searchResultPage.itemSearched(), testData.getProperty("ExistingProduct"));
+	}
+	
+	
+	
 
-	}*/
-
+	
+	
+	
+	
+	
 }

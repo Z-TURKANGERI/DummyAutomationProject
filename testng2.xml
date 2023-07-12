@@ -10,6 +10,7 @@
 			<class name="com.tutorialsninja.qa.testCases.TestLogin" />
 			<class name="com.tutorialsninja.qa.testCases.TestLogout" />
 			<class name="com.tutorialsninja.qa.testCases.TestForgetPassword" />
+			<class name="com.tutorialsninja.qa.testCases.TestSearch"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

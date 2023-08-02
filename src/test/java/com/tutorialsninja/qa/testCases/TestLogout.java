@@ -44,7 +44,8 @@ public class TestLogout extends conftest {
 		logoutPage = accountPage.logoutLoginPage();
 		Assert.assertEquals(logoutPage.accountLogoutActualText(), logoutPage.accountLogoutExpectedText());
 		homepage = logoutPage.ContinueButton();
-		Assert.assertEquals(homepage.yourStoreActualText(), homepage.yourStoreExpectedText());
+		
+		Assert.assertEquals(baseclass.getTitle(), homepage.yourStoreExpectedText());
 	}
 
 	@Test(priority = 2)
@@ -54,7 +55,7 @@ public class TestLogout extends conftest {
 		logoutPage = accountPage.logoutOnPage();
 		Assert.assertEquals(logoutPage.accountLogoutActualText(), logoutPage.accountLogoutExpectedText());
 		homepage = logoutPage.ContinueButton();
-		Assert.assertEquals(homepage.yourStoreActualText(), homepage.yourStoreExpectedText());
+		Assert.assertEquals(baseclass.getTitle(), homepage.yourStoreExpectedText());
 	}
 
 	@Test(priority = 3)

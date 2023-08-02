@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ForgetPasswordPageObjects {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public ForgetPasswordPageObjects(WebDriver driver) {
 		this.driver = driver;

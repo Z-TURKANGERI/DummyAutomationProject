@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseClass {
@@ -170,4 +171,25 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(link);
 	}
+	
+	public void selectDropdownByVisibleText(WebElement locator, String text) {
+		Select select = new Select(locator);
+		select.selectByVisibleText(text);
+	}
+	
+	public void selectDropdownByValue(WebElement locator, String value) {
+		Select select = new Select(locator);
+		select.selectByValue(value);
+	}
+	
+	public boolean isEnabled(WebElement locator) {
+		return locator.isEnabled();
+	}
+	
+	
+	public void mouseHover(WebElement locator) {
+		Actions action = new Actions(driver);
+		action.moveToElement(locator).click().perform();
+	}
+	
 }

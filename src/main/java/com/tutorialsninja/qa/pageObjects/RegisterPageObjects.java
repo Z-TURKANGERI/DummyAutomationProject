@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RegisterPageObjects {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public RegisterPageObjects(WebDriver driver) {
 		this.driver = driver;

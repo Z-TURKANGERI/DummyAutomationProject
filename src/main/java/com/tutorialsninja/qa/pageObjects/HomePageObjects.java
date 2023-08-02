@@ -9,7 +9,7 @@ import com.tutorialsninja.qa.utilities.BaseClass;
 
 public class HomePageObjects {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	BaseClass baseclass;
 	
 	public HomePageObjects(WebDriver driver) {
@@ -21,6 +21,13 @@ public class HomePageObjects {
 	@FindBy(xpath = "//span[text()='My Account']") private WebElement account;
 	@FindBy(linkText = "Register") private WebElement register;
 	@FindBy(linkText = "Login") private WebElement login;
+	
+	
+	//Tabs
+	@FindBy(xpath = "//a[text()='Desktops']") private WebElement desktopTab;
+	
+	//Tabs WebElement
+	@FindBy(xpath = "//a[text()='Show AllDesktops']") private WebElement allDesktopsElement;
 	
 	public WebElement accountDropdown() {
 		return account;
@@ -51,11 +58,11 @@ public class HomePageObjects {
 	
 	
 	//ACTUAL TEXT ON HOMEPAGE FOR ASSERTION
-	@FindBy(linkText = "Your Store") private WebElement yourStore;
+	/*@FindBy(linkText = "Your Store") private WebElement yourStore;
 	
-	public String yourStoreActualText() {
+	public String yourStoreActualText() {		//Need to delete method and variable
 		return yourStore.getText();
-	}
+	}*/
 	
 	//EXPECTED TEXT ON HOMEPAGE FOR ASSERTION
 	public String yourStoreExpectedText() {
@@ -77,7 +84,14 @@ public class HomePageObjects {
 		return new SearchResultPageObjects(driver);
 	}
 	
+	public WebElement desktopTab() {
+		return desktopTab;
+	}
 	
+	public DesktopPageObjects allDesktopsElement() {
+		allDesktopsElement.click();
+		return new DesktopPageObjects(driver);
+	}
 	
 	
 	

@@ -11,7 +11,7 @@ import com.tutorialsninja.qa.conftest.conftest;
 import com.tutorialsninja.qa.pageObjects.AccountPageObjects;
 import com.tutorialsninja.qa.pageObjects.HomePageObjects;
 import com.tutorialsninja.qa.pageObjects.LoginPageObjects;
-import com.tutorialsninja.qa.pageObjects.RegisterPageObjects;
+import com.tutorialsninja.qa.pageObjects.ProductDisplayPageObjects;
 import com.tutorialsninja.qa.pageObjects.SearchResultPageObjects;
 import com.tutorialsninja.qa.utilities.BaseClass;
 
@@ -23,6 +23,7 @@ public class TestSearch extends conftest {
 	LoginPageObjects loginPage;
 	AccountPageObjects accountPage;
 	HomePageObjects homePage;
+	ProductDisplayPageObjects productPage;
 
 	@BeforeMethod(alwaysRun = true)
 	public void initilization() {
@@ -99,12 +100,59 @@ public class TestSearch extends conftest {
 		Assert.assertEquals(searchResultPage.itemSearched(), testData.getProperty("ExistingProduct"));
 	}
 	
+	@Test(priority=7)
+	public void verifySearchingBySelectingCategoryOfProduct() {
+		HomePageObjects homePage = new HomePageObjects(driver);
+		searchResultPage = homePage.searchButton();
+		searchResultPage.searchCriteriaTextBox().sendKeys(testData.getProperty("ExistingProduct"));
+		baseClass.selectDropdownByValue(searchResultPage.allCategoryDropdown(),"27");
+		searchResultPage.searchButtonCriteria().click();
+		
+		Assert.assertEquals(searchResultPage.itemSearched(), testData.getProperty("ExistingProduct"));
+		
+		baseClass.selectDropdownByValue(searchResultPage.allCategoryDropdown(),"26");
+		searchResultPage.searchButtonCriteria().click();
+		
+		Assert.assertEquals(searchResultPage.messageOfNoProduct(), testData.getProperty("noProductResultMessage"));
+		}
 	
+	@Test(priority=8)
+	public void verifySearchingBySelectingSearchInSubcategories() {
+		HomePageObjects homePage = new HomePageObjects(driver);
+		searchResultPage = homePage.searchButton();
+		searchResultPage.searchCriteriaTextBox().sendKeys(testData.getProperty("ExistingProduct"));
+		baseClass.selectDropdownByValue(searchResultPage.allCategoryDropdown(),"20");
+		searchResultPage.subCategoryCheckbox().click();
+		searchResultPage.searchButtonCriteria().click();
+		
+		Assert.assertEquals(searchResultPage.itemSearched(), testData.getProperty("ExistingProduct"));
+	}
 	
+	@Test(priority=9)
+	public void verifySearchingViewListAndGridWhenOnePrdouctDisplayed() {
+		HomePageObjects homePage = new HomePageObjects(driver);
+		homePage.searchTextBox().sendKeys(testData.getProperty("ExistingProduct"));
+		searchResultPage = homePage.searchButton();
 
-	
-	
-	
+		Assert.assertEquals(searchResultPage.itemSearched(), testData.getProperty("ExistingProduct"));
+		
+		searchResultPage.viewListButton().click();
+		baseClass.isEnabled(searchResultPage.addToCartButton());
+		baseClass.isEnabled(searchResultPage.addToWishListButton());
+		baseClass.isEnabled(searchResultPage.addToCompareTheProduct());
+		searchResultPage.productImage();
+		Assert.assertEquals(baseClass.getTitle(), testData.getProperty("ExistingProduct"));
+		baseClass.browserBack();
+		searchResultPage.productLink();
+		Assert.assertEquals(baseClass.getTitle(), testData.getProperty("ExistingProduct"));
+		baseClass.browserBack();
+		searchResultPage.viewGridButton().click();
+		searchResultPage.productImage();
+		Assert.assertEquals(baseClass.getTitle(), testData.getProperty("ExistingProduct"));
+		baseClass.browserBack();
+		searchResultPage.productLink();
+		Assert.assertEquals(baseClass.getTitle(), testData.getProperty("ExistingProduct"));
+	}
 	
 	
 }

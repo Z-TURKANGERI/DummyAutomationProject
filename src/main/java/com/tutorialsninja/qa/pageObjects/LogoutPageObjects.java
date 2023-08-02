@@ -9,7 +9,7 @@ import com.tutorialsninja.qa.utilities.BaseClass;
 
 public class LogoutPageObjects {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	BaseClass baseclass;
 	
 	public LogoutPageObjects(WebDriver driver) {

@@ -9,7 +9,7 @@ import com.tutorialsninja.qa.utilities.BaseClass;
 
 public class LoginPageObjects {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	BaseClass baseclass;
 	
 	public LoginPageObjects(WebDriver driver) {
@@ -58,6 +58,14 @@ public class LoginPageObjects {
 		login.click();
 		return new AccountPageObjects(driver);
 	}
+	
+	public WishListPageObjects loginToAccountForWishList(String Validemail, String ValidPassword) {
+		email.sendKeys(Validemail);
+		password.sendKeys(ValidPassword);
+		login.click();
+		return new WishListPageObjects(driver);
+	}
+	
 
 	//ACCOUNT DROPDOWN 
 	@FindBy(linkText= "My Account") private WebElement accountDropDown;

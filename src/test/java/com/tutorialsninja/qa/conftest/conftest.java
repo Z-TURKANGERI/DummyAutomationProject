@@ -16,7 +16,7 @@ import com.tutorialsninja.qa.utilities.path;
 
 public class conftest {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	public Properties config;
 	public Properties testData;
 	
@@ -42,9 +42,18 @@ public class conftest {
 	
 	public WebDriver setup(String browserName) {
 		if(browserName.equalsIgnoreCase("chrome")) {
-			ChromeOptions options = new ChromeOptions();
+			
+			/*ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver(options);*/
+			
+			System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
+	        ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--remote-allow-origins=*");
+	        options.setBinary("C:\\SeleniumDrivers\\chrome.exe");
+	        driver = new ChromeDriver(options);
+		
+			//driver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
 		}else if(browserName.equalsIgnoreCase("edge")) {

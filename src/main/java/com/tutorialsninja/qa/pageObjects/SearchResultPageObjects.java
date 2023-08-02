@@ -9,7 +9,7 @@ import com.tutorialsninja.qa.utilities.BaseClass;
 
 public class SearchResultPageObjects {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	BaseClass baseClass;
 	
 	public SearchResultPageObjects(WebDriver driver) {
@@ -18,13 +18,30 @@ public class SearchResultPageObjects {
 		baseClass = new BaseClass(driver);
 	}
 	
+	//elements of the page
+	@FindBy(id = "input-search") private WebElement searchCriteriaTextBox;
+	@FindBy(xpath = "//select[@name='category_id']") private WebElement allCategoryDropdown;
+	@FindBy(name = "sub_category") private WebElement subCategoryCheckbox;
+	@FindBy(id = "description") private WebElement productDescriptionCheckbox;	
+	@FindBy(id = "button-search") private WebElement searchButtonCriteria;
+	@FindBy(xpath = " //div[@id='cart']/button") private WebElement cartButtonInBlackColour;
+			
+	//Product showing view after search
+	@FindBy(id = "list-view") private WebElement listButton;
+	@FindBy(id = "grid-view") private WebElement gridButton;
 	
+	//Assertion elements
 	@FindBy(xpath = "//a[text()= 'iMac']") private WebElement itemSearched;
 	@FindBy(xpath = "//p[contains(text(),'There is no product that matches the search criter')]") private WebElement messageOfNoProduct;
 	
-	@FindBy(id = "input-search") private WebElement searchCriteriaTextBox;
-	@FindBy(id = "button-search") private WebElement searchButtonCriteria;
-	@FindBy(id = "description") private WebElement productDescriptionCheckbox;
+	//product
+	@FindBy(id = "compare-total") private WebElement compareProduct;
+	@FindBy(xpath = "//img[@alt='iMac' and @class='img-responsive']") private WebElement productImage;
+	@FindBy(linkText = "iMac") private WebElement productLink;
+	@FindBy(xpath = "//div[@class='caption']//a") private WebElement hpProduct;
+	@FindBy(xpath = "//span[text()='Add to Cart']/parent::button") private WebElement addToCartButton;
+	@FindBy(xpath = "//button[@data-original-title='Add to Wish List']") private WebElement addToWishListButton;
+	@FindBy(xpath = "//button[@data-original-title='Compare this Product']") private WebElement compareTheProduct;
 	
 	public String itemSearched() {
 		return itemSearched.getText();
@@ -46,7 +63,58 @@ public class SearchResultPageObjects {
 		return productDescriptionCheckbox;
 	}
 	
+	public WebElement allCategoryDropdown() {
+		return allCategoryDropdown;
+	}
 
+	public WebElement subCategoryCheckbox() {
+		return subCategoryCheckbox;
+	}
+	
+	public WebElement viewListButton() {
+		return listButton;
+	}
+	
+	public WebElement viewGridButton() {
+		return gridButton;
+	}
+	
+	public ProductDisplayPageObjects productImage() {
+		productImage.click();
+		return new ProductDisplayPageObjects(driver);
+	}
+	
+	public ProductDisplayPageObjects hpProduct() {
+		hpProduct.click();
+		return new ProductDisplayPageObjects(driver);
+	}
+	
+	public ProductDisplayPageObjects productLink() {
+		productLink.click();
+		return new ProductDisplayPageObjects(driver);
+	}
+	
+	public WebElement addToCartButton() {
+		return addToCartButton;
+	}
+	
+	public WebElement addToWishListButton() {
+		return addToWishListButton;
+	}
+	
+	public WebElement addToCompareTheProduct() {
+		return compareTheProduct;
+	}
+	
+	public CartPageObjects cartButtonInBlackColour() {
+		cartButtonInBlackColour.click();
+		return new CartPageObjects(driver);
+	}
+	
+	public ProductComparisonPageObjects compareProduct() {
+		compareProduct.click();
+		return new ProductComparisonPageObjects(driver);
+	}
 		
 	
 	

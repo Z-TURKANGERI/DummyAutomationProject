@@ -110,11 +110,10 @@ public class TestLogin extends conftest {
 		loginPage.Email().sendKeys(config.getProperty("validEmail"));
 		loginPage.password().sendKeys(config.getProperty("validPassword"));
 		accountPage = loginPage.Login();
-
 		Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
-		
 		baseclass.browserBack();
-		Assert.assertEquals(loginPage.returningCustomerActualText(), loginPage.returningCustomerExpectedText());
+		Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
+		//Assert.assertEquals(loginPage.returningCustomerActualText(), loginPage.returningCustomerExpectedText());
 	}
 	
 

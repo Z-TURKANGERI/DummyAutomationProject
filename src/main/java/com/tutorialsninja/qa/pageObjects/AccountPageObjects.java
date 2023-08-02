@@ -9,7 +9,7 @@ import com.tutorialsninja.qa.utilities.BaseClass;
 
 public class AccountPageObjects {
 
-	WebDriver driver;
+	public WebDriver driver;
 	BaseClass baseclass;
 
 	public AccountPageObjects(WebDriver driver) {

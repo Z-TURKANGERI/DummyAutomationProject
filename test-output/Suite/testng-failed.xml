@@ -8,49 +8,80 @@
     <classes>
       <class name="com.tutorialsninja.qa.testCases.TestLogin">
         <methods>
-          <include name="verify_login_Code_In_SourceCode_PasswordFiled"/>
-          <include name="verify_login_Copying_TEXT_PasswordFiled"/>
+          <include name="verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt"/>
           <include name="initilization"/>
-          <include name="verify_login_With_InValid_Credential"/>
-          <include name="verify_login_after_Changing_Password"/>
+          <include name="verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword"/>
+          <include name="verifyLoginToApplicationAfterChangingPassword"/>
+          <include name="verifyLoginToApplicationWithInvalidCredential"/>
+          <include name="verifyLoginToApplicationByCopyingPasswordFiledText"/>
+          <include name="verifyLoginToApplicationWithValidUserNameInvalidPassword"/>
+          <include name="verifyLoginToApplicationWithValidPasswordAndInvalidUserName"/>
+          <include name="verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource"/>
+          <include name="verifyLoginToApplicationCheckUserIsAbleToNavigateToOtherPages"/>
+          <include name="verifyLoginToApplicationaLoginAfterThatLogoutAndBrowserBackUsingBrowserButtton"/>
+          <include name="verifyLoginToApplicationWithValidCredentialBrowsingBackUsingBrowserBackButton"/>
+          <include name="verifyLoginToApplicationCheckForgettenPasswordLinkIsPresnetAndClickable"/>
+          <include name="verifyLoginToApplicationWithValidCredential"/>
           <include name="tearDown"/>
-          <include name="verify_login_afterLogin_browserBack"/>
-          <include name="verify_login_With_Valid_password_invalid_userName"/>
-          <include name="verify_login_after_Changing_Password_and_Changing_toOriginal_password"/>
-          <include name="verify_login_With_Valid_Credential_BrowserBack"/>
+          <include name="verifyLoginToApplicationWithoutProvidingAnyCredentials"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestLogin -->
       <class name="com.tutorialsninja.qa.testCases.TestRegister">
         <methods>
-          <include name="verify_Registering_PrivacyPolicy_isSelected"/>
-          <include name="verify_Registering_enterPassword_WithoutConfirmPassword"/>
-          <include name="verify_Registering_PrivacyPolicy_Without_Selecting"/>
-          <include name="verify_Registering_By_Invalid_Email" invocation-numbers="0"/>
-          <include name="verify_Registering_By_Invalid_Phone" invocation-numbers="0 1"/>
-          <include name="verify_Registering_Spaces_Trimmed"/>
-          <include name="verify_Registering_With_Space_Field"/>
+          <include name="verifyRegisteringAnAccountByInvalidPhonenumbers"/>
+          <include name="verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed"/>
+          <include name="verifyRegisteringAnAccountByFillingPasswordAndWithoutFillingConfirmPassword"/>
+          <include name="verifyRegisteringAnAccountBySelectingNewsletterNO"/>
+          <include name="verifyRegisteringAnAccountByProvidingDifferentPasswordInPasswordAndConfirmPassword"/>
+          <include name="verifyRegisteringAnAccountBySelectingNewsletterNOYES"/>
+          <include name="verifyRegisteringNotificationMessagesForMandatoryFieldBYNotProvidingFileds"/>
           <include name="tearDown"/>
+          <include name="verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword"/>
           <include name="initilization"/>
+          <include name="verifyRegisteringAnAccountByInvalidEmails"/>
+          <include name="verifyRegisteringAnAccountWithoutSelectingPrivacyPolicyCheckbox"/>
+          <include name="verifyRegisteringAnAccountByProvidingMandatoryField"/>
+          <include name="verifyRegisteringAnAccountCheckPrivacyPolicyCheckboxIsNotSelectedByDefault"/>
+          <include name="verifyRegisteringAnAccountByProvidingExistingAccount"/>
+          <include name="verifyRegisteringAnAccountByProvidingAllField"/>
+          <include name="verifyRegisteringAnAccountByProvidingSpacesInTheFields"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestRegister -->
+      <class name="com.tutorialsninja.qa.testCases.TestSearch">
+        <methods>
+          <include name="verifySearchingUsingTextFromProductDescription"/>
+          <include name="initilization"/>
+          <include name="verifySearchingWithSearchingCriteria"/>
+          <include name="tearDown"/>
+          <include name="verifySearchingViewListAndGridWhenOnePrdouctDisplayed"/>
+          <include name="verifySearchingWithNonExistingProductName"/>
+          <include name="verifySearchingForProductAfterLoginToApplication"/>
+          <include name="verifySearchingBySelectingSearchInSubcategories"/>
+          <include name="verifySearchingWithExistingProductName"/>
+          <include name="verifySearchingWithotProvidingAnyProductName"/>
+          <include name="verifySearchingBySelectingCategoryOfProduct"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testCases.TestSearch -->
       <class name="com.tutorialsninja.qa.testCases.TestLogout">
         <methods>
-          <include name="verify_Logout_Option_NotDisplayed_BeforeLogin_UnderRight_Column"/>
-          <include name="verify_Logout_AfterLogout_FromOneAccount_AnotherAccount"/>
+          <include name="verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayedBeforeLoginToAccountInAccountDrodown"/>
           <include name="initilization"/>
-          <include name="verify_Logout_By_LoggingOut_And_BrowsingBack"/>
-          <include name="verify_Logout_Option_NotDisplayed_BeforeLogin_Account_Drodown"/>
+          <include name="verifyLoggingOutFromApplicationAndBrowsingBack"/>
+          <include name="verifyLoggingOutFromApplicationFromMyAccountDropdown"/>
+          <include name="verifyLoggingOutFromApplicationFromLogoutOptionOnPage"/>
+          <include name="verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayBeforeLoginUnderRightColumn"/>
           <include name="tearDown"/>
-          <include name="verify_Logout_By_LoggingOut_From_MyAccount_Dropdown"/>
-          <include name="verify_Logout_By_LoggingOut_From_LogoutOption_OnPage"/>
+          <include name="verifyLoggingOutFromApplicationAfterLogoutFromOneAccountImmediatelyLoginFromAnotherAccount"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestLogout -->
       <class name="com.tutorialsninja.qa.testCases.TestForgetPassword">
         <methods>
-          <include name="verify_forgetPassword_Without_providing_EmailAddress"/>
+          <include name="verifyForgetPasswordCheckLoggingIntoApplicationWithOldPasswordAfterResettingPasswordIntitiatedProcess"/>
           <include name="initlization"/>
+          <include name="verifyForgetPasswordWithoutProvidingEmailAddress"/>
+          <include name="verifyForgetPasswordWithNonRegisteredAccount"/>
           <include name="tearDown"/>
-          <include name="verify_forgetPassword_User_able_to_restore_password"/>
+          <include name="verifyForgetPasswordUserAbleToRestorePassword"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestForgetPassword -->
     </classes>

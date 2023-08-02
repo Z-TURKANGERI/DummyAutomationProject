@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AccountConfirmPageObjects {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public AccountConfirmPageObjects(WebDriver driver) {
 		this.driver = driver;

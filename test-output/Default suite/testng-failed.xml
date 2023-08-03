@@ -6,7 +6,7 @@
       <class name="com.tutorialsninja.qa.testCases.TestLogout">
         <methods>
           <include name="initilization"/>
-          <include name="verifyLoggingOutFromApplicationAndBrowsingBack"/>
+          <include name="verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayBeforeLoginUnderRightColumn"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestLogout -->

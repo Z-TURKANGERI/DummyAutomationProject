@@ -72,16 +72,8 @@ public class TestLogout extends conftest {
 		if(baseclass.getTitle().equals("My Account")) {
 			Assert.assertNotEquals(baseclass.getTitle(), "My Account");
 		}else {
-			Assert.assertTrue(true);
+			Assert.assertFalse(false, "Logging Out From Application And Browsing Back user should not logged in");
 		}
-		
-		/*if(baseclass.getTitle().equals("Account Login")) {
-			loginPage = PageFactory.initElements(driver, LoginPageObjects.class);
-			accountPage = loginPage.accountDropdown();
-			Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
-		}else {
-			Assert.assertFalse(true);
-		}*/
 	}
 
 	@Test(priority = 4)

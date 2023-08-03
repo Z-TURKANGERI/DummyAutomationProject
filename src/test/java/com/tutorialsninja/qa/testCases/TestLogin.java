@@ -118,7 +118,7 @@ public class TestLogin extends conftest {
 			accountPage = loginPage.accountDropdown();
 			Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
 		}else {
-			Assert.assertFalse(true);
+			Assert.assertTrue(false, "Login to application with valid credential browsing back using Browser Back Button user should not logout");
 		}
 	}
 	
@@ -141,11 +141,10 @@ public class TestLogin extends conftest {
 		baseclass.browserBack();
 		
 		if(baseclass.getTitle().equals("My Account")) {
-			Assert.assertTrue(false);
+			Assert.assertTrue(false, " User should not get loggedin again");
 		}else {
 			Assert.assertTrue(true);
 		}
-		
 	}
 
 	

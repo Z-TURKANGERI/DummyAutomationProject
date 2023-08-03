@@ -6,6 +6,23 @@
   </listeners>
   <test thread-count="5" name="Automation Test cases(failed)">
     <classes>
+      <class name="com.tutorialsninja.qa.testCases.TestLogin">
+        <methods>
+          <include name="initilization"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testCases.TestLogin -->
+      <class name="com.tutorialsninja.qa.testCases.TestRegister">
+        <methods>
+          <include name="verifyRegisteringAnAccountByInvalidPhonenumbers" invocation-numbers="0 1"/>
+          <include name="verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed"/>
+          <include name="tearDown"/>
+          <include name="verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword"/>
+          <include name="initilization"/>
+          <include name="verifyRegisteringAnAccountByProvidingSpacesInTheFields"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testCases.TestRegister -->
       <class name="com.tutorialsninja.qa.testCases.TestAddToCart">
         <methods>
           <include name="tearDown"/>
@@ -13,13 +30,6 @@
           <include name="verifyAddToCartAddingProductToCartFromSearchPage"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestAddToCart -->
-      <class name="com.tutorialsninja.qa.testCases.TestLogout">
-        <methods>
-          <include name="initilization"/>
-          <include name="verifyLoggingOutFromApplicationAndBrowsingBack"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.qa.testCases.TestLogout -->
       <class name="com.tutorialsninja.qa.testCases.TestForgetPassword">
         <methods>
           <include name="initlization"/>

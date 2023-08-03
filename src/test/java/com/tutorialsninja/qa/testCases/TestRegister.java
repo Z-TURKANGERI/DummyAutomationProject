@@ -193,7 +193,7 @@ public class TestRegister extends conftest {
 			Assert.assertEquals(registerPage.telephoneActualWarningMessage(),
 					registerPage.telephoneExepectedWarningMessage());
 		} else {
-			Assert.assertTrue(false);
+			Assert.assertFalse(true, "Account got created with invalid phone numbers");
 		}
 	}
 
@@ -241,9 +241,13 @@ public class TestRegister extends conftest {
 		registerPage.confirmPassword().sendKeys(testData.getProperty("NotComplexPassword"));
 		registerPage.privacyPolicy().click();
 		registerPage.submit();
-
+		
+		if(baseclass.getTitle().equals("Register Account")) {
 		Assert.assertEquals(registerPage.passwordActualWarningMessage(),
 				registerPage.passwordComplexityExpectedWarningMessage());
+	}else {
+		Assert.assertFalse(true, "Account got created without password complexity");
+		}
 	}
 
 	@Test(priority = 12)

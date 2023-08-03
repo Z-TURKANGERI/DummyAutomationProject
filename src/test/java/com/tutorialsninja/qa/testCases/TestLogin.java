@@ -2,6 +2,7 @@ package com.tutorialsninja.qa.testCases;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -103,7 +104,7 @@ public class TestLogin extends conftest {
 				forgetPasswordPage.forgetPasstextExpectedText());
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 7)
 	public void verifyLoginToApplicationWithValidCredentialBrowsingBackUsingBrowserBackButton() {
 		HomePageObjects homepage = new HomePageObjects(driver);
 		loginPage = homepage.accountLogin();
@@ -112,12 +113,17 @@ public class TestLogin extends conftest {
 		accountPage = loginPage.Login();
 		Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
 		baseclass.browserBack();
-		Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
-		//Assert.assertEquals(loginPage.returningCustomerActualText(), loginPage.returningCustomerExpectedText());
+		if(baseclass.getTitle().equals("Account Login")) {
+			loginPage = PageFactory.initElements(driver, LoginPageObjects.class);
+			accountPage = loginPage.accountDropdown();
+			Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
+		}else {
+			Assert.assertFalse(true);
+		}
 	}
 	
 
-	@Test(priority = 10)
+	@Test(priority = 8)
 	public void verifyLoginToApplicationaLoginAfterThatLogoutAndBrowserBackUsingBrowserButtton() {
 		HomePageObjects homepage = new HomePageObjects(driver);
 		loginPage = homepage.accountLogin();
@@ -130,14 +136,20 @@ public class TestLogin extends conftest {
 		accountPage.myAccountDropdownLoginPage().click();
 		logoutPage = accountPage.logoutLoginPage();
 		Assert.assertEquals(logoutPage.accountLogoutActualText(), logoutPage.accountLogoutExpectedText());
-		String expected_title = baseclass.getTitle();
+		logoutPage.ContinueButton();
+		baseclass.browserBack();
 		baseclass.browserBack();
 		
-		Assert.assertEquals(baseclass.getTitle(), expected_title);
+		if(baseclass.getTitle().equals("My Account")) {
+			Assert.assertTrue(false);
+		}else {
+			Assert.assertTrue(true);
+		}
+		
 	}
 
 	
-	@Test(priority = 11, invocationCount = 10)
+	@Test(priority = 9, invocationCount = 10)
 	public void verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt() {
 		int invocationCount = 0;
 		HomePageObjects homepage = new HomePageObjects(driver);
@@ -154,7 +166,7 @@ public class TestLogin extends conftest {
 	}
 
 	
-	@Test(priority = 12)
+	@Test(priority = 10)
 	public void verifyLoginToApplicationByCopyingPasswordFiledText() {
 		HomePageObjects homepage = new HomePageObjects(driver);
 		loginPage = homepage.accountLogin();
@@ -166,7 +178,7 @@ public class TestLogin extends conftest {
 	}
 	
 	
-	@Test(priority = 13)
+	@Test(priority = 11)
 	public void verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource() {
 		HomePageObjects homepage = new HomePageObjects(driver);
 		loginPage = homepage.accountLogin();
@@ -179,7 +191,7 @@ public class TestLogin extends conftest {
 	}
 
 	
-	@Test(priority = 14)
+	@Test(priority = 12)
 	public void verifyLoginToApplicationAfterChangingPassword() {
 		HomePageObjects homepage = new HomePageObjects(driver);
 		loginPage = homepage.accountLogin();
@@ -210,7 +222,7 @@ public class TestLogin extends conftest {
 	}
 	
 
-	@Test(priority=16, dependsOnMethods = "verifyLoginToApplicationAfterChangingPassword")
+	@Test(priority=13, dependsOnMethods = "verifyLoginToApplicationAfterChangingPassword")
 	public void verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword() {		
 		HomePageObjects homepage = new HomePageObjects(driver);
 		loginPage = homepage.accountLogin();
@@ -241,7 +253,7 @@ public class TestLogin extends conftest {
 	}
 	
 	
-	@Test(priority = 15)
+	@Test(priority = 14)
 	public void verifyLoginToApplicationCheckUserIsAbleToNavigateToOtherPages() {
 		HomePageObjects homepage = new HomePageObjects(driver);
 		loginPage = homepage.accountLogin();

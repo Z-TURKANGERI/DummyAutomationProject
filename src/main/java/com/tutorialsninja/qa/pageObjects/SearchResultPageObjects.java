@@ -31,7 +31,7 @@ public class SearchResultPageObjects {
 	@FindBy(id = "grid-view") private WebElement gridButton;
 	
 	//Assertion elements
-	@FindBy(xpath = "//a[text()= 'iMac']") private WebElement itemSearched;
+	@FindBy(xpath = "//div[@class='caption']//a[contains(text(),'iMac')]") private WebElement itemSearched;
 	@FindBy(xpath = "//p[contains(text(),'There is no product that matches the search criter')]") private WebElement messageOfNoProduct;
 	
 	//product

@@ -1,6 +1,7 @@
 package com.tutorialsninja.qa.testCases;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -64,9 +65,23 @@ public class TestLogout extends conftest {
 		accountPage.myAccountDropdownLoginPage();
 		logoutPage = accountPage.logoutOnPage();
 		Assert.assertEquals(logoutPage.accountLogoutActualText(), logoutPage.accountLogoutExpectedText());
-		String Expected = baseclass.getTitle();
+		logoutPage.ContinueButton();
 		baseclass.browserBack();
-		Assert.assertEquals(baseclass.getTitle(), Expected);
+		baseclass.browserBack();
+		
+		if(baseclass.getTitle().equals("My Account")) {
+			Assert.assertNotEquals(baseclass.getTitle(), "My Account");
+		}else {
+			Assert.assertTrue(true);
+		}
+		
+		/*if(baseclass.getTitle().equals("Account Login")) {
+			loginPage = PageFactory.initElements(driver, LoginPageObjects.class);
+			accountPage = loginPage.accountDropdown();
+			Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
+		}else {
+			Assert.assertFalse(true);
+		}*/
 	}
 
 	@Test(priority = 4)

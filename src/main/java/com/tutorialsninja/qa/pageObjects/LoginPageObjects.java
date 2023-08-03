@@ -68,13 +68,21 @@ public class LoginPageObjects {
 	
 
 	//ACCOUNT DROPDOWN 
-	@FindBy(linkText= "My Account") private WebElement accountDropDown;
+	@FindBy(linkText = "My Account") private WebElement accountDropDown;
+	@FindBy(linkText = "Login") private WebElement loginFromDropdown;
 	@FindBy(xpath = "(//a[contains(text(),'Logout')])[1]") private WebElement accountDropDownForget;
 	
 	public WebElement LoginPageDropDown() {
 		baseclass.explicitWait(10, accountDropDown);
 		accountDropDown.click();
 		return accountDropDownForget;		
+	}
+	
+	public AccountPageObjects accountDropdown() {
+		baseclass.explicitWait(10, accountDropDown);
+		accountDropDown.click();
+		loginFromDropdown.click();
+		return new AccountPageObjects(driver);		
 	}
 	
 	

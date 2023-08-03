@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tutorialsninja.qa.testCases.TestForgetPassword">
+      <class name="com.tutorialsninja.qa.testCases.TestLogout">
         <methods>
-          <include name="initlization"/>
+          <include name="initilization"/>
+          <include name="verifyLoggingOutFromApplicationAndBrowsingBack"/>
           <include name="tearDown"/>
-          <include name="verifyForgetPasswordUserAbleToRestorePassword"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testCases.TestForgetPassword -->
+      </class> <!-- com.tutorialsninja.qa.testCases.TestLogout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

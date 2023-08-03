@@ -47,17 +47,20 @@ public class conftest {
 			options.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(options);*/
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Zuber\\.cache\\selenium\\chromedriver\\win64\\115.0.5790.102\\chromedriver.exe");
 	        ChromeOptions options = new ChromeOptions();
 	        options.addArguments("--remote-allow-origins=*");
-	        options.setBinary("C:\\SeleniumDrivers\\chrome.exe");
+	        //options.setBinary("C:\\SeleniumDrivers\\chrome.exe");
 	        driver = new ChromeDriver(options);
 		
 			//driver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
+				
 		}else if(browserName.equalsIgnoreCase("edge")) {
 			EdgeOptions options = new EdgeOptions();
+			options.setBrowserVersion("116");
+			//System.setProperty("webdriver.edge.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
 			options.addArguments("--remote-allow-origins=*");	
 			driver = new EdgeDriver(options);
 		}

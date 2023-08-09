@@ -113,6 +113,7 @@ public class TestLogin extends conftest {
 		accountPage = loginPage.Login();
 		Assert.assertEquals(accountPage.myAccountActualText(), accountPage.myAccountTextExpectedText());
 		baseclass.browserBack();
+		
 		if(baseclass.getTitle().equals("Account Login")) {
 			loginPage = PageFactory.initElements(driver, LoginPageObjects.class);
 			accountPage = loginPage.accountDropdown();

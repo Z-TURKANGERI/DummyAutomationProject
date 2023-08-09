@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tutorialsninja.qa.testCases.TestLogout">
+      <class name="com.tutorialsninja.qa.testCases.TestLogin">
         <methods>
           <include name="initilization"/>
-          <include name="verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayBeforeLoginUnderRightColumn"/>
+          <include name="verifyLoginToApplicationWithValidCredential"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testCases.TestLogout -->
+      </class> <!-- com.tutorialsninja.qa.testCases.TestLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

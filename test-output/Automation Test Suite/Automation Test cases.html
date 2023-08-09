@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Automation Test cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>54/9/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>51/10/5</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 03 15:54:51 IST 2023</td>
+<td>Started on:</td><td>Wed Aug 09 15:26:57 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>472 seconds (472022 ms)</td>
+<tr><td>Total time:</td><td>621 seconds (621686 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,180 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.initilization()'><b>initilization</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace790798176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace790798176'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b2b6f6a2f39226af330b33f3bc061459, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56819}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56819/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2b6f6a2f39226af330b33f3bc061459
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405)
+	at com.tutorialsninja.qa.testCases.TestLogin.tearDown(TestLogin.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace718221576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace718221576'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b2b6f6a2f39226af330b33f3bc061459, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56819}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56819/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2b6f6a2f39226af330b33f3bc061459
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405)
+	at com.tutorialsninja.qa.testCases.TestLogin.tearDown(TestLogin.java:39)
+	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,12 +250,180 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidCredentialBrowsingBackUsingBrowserBackButton()'><b>verifyLoginToApplicationWithValidCredentialBrowsingBackUsingBrowserBackButton</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>java.lang.AssertionError: Login to application with valid credential browsing back using Browser Back Button user should not logout expected [true] but found [false]
+	at com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidCredentialBrowsingBackUsingBrowserBackButton(TestLogin.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace645532522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645532522'><pre>java.lang.AssertionError: Login to application with valid credential browsing back using Browser Back Button user should not logout expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidCredentialBrowsingBackUsingBrowserBackButton(TestLogin.java:122)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationaLoginAfterThatLogoutAndBrowserBackUsingBrowserButtton()'><b>verifyLoginToApplicationaLoginAfterThatLogoutAndBrowserBackUsingBrowserButtton</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>java.lang.AssertionError:  User should not get loggedin again expected [true] but found [false]
+	at com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationaLoginAfterThatLogoutAndBrowserBackUsingBrowserButtton(TestLogin.java:145)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace122609790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace122609790'><pre>java.lang.AssertionError:  User should not get loggedin again expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationaLoginAfterThatLogoutAndBrowserBackUsingBrowserButtton(TestLogin.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers()'><b>verifyRegisteringAnAccountByInvalidPhonenumbers</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: abcde</td>
+<td><div><pre>java.lang.AssertionError: Account got created with invalid phone numbers expected [false] but found [true]
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2076083498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076083498'><pre>java.lang.AssertionError: Account got created with invalid phone numbers expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers()'><b>verifyRegisteringAnAccountByInvalidPhonenumbers</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: 111</td>
+<td><div><pre>java.lang.AssertionError: Account got created with invalid phone numbers expected [false] but found [true]
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078400903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2078400903'><pre>java.lang.AssertionError: Account got created with invalid phone numbers expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
 <td title='com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordUserAbleToRestorePassword()'><b>verifyForgetPasswordUserAbleToRestorePassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestForgetPassword</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordUserAbleToRestorePassword(TestForgetPassword.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace774521530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace774521530'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1996231083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1996231083'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertTrue(Assert.java:56)
@@ -117,235 +459,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5922d3e9</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartAddingProductToCartFromSearchPage()'><b>verifyAddToCartAddingProductToCartFromSearchPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; data-loading-text=&quot;Loading...&quot; class=&quot;btn btn-inverse btn-block btn-lg dropdown-toggle&quot;&gt;...&lt;/button&gt; is not clickable at point (1113, 20). Other element would receive the click: &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=115.0.5790.110)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [185cf89c848455bd201b015784b622fa, clickElement {id=D1B5C0DD1C73614916765338A1B90249_element_56}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63682/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (185cf89c848455bd201b015784b622fa)] -&gt; xpath:  //div[@id=&apos;cart&apos;]/button]
-Session ID: 185cf89c848455bd201b015784b622fa
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at com.tutorialsninja.qa.pageObjects.SearchResultPageObjects.cartButtonInBlackColour(SearchResultPageObjects.java:110)
-	at com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartAddingProductToCartFromSearchPage(TestAddToCart.java:81)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace505587202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace505587202'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; data-loading-text=&quot;Loading...&quot; class=&quot;btn btn-inverse btn-block btn-lg dropdown-toggle&quot;&gt;...&lt;/button&gt; is not clickable at point (1113, 20). Other element would receive the click: &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;...&lt;/span&gt;
-  (Session info: chrome=115.0.5790.110)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [185cf89c848455bd201b015784b622fa, clickElement {id=D1B5C0DD1C73614916765338A1B90249_element_56}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63682/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (185cf89c848455bd201b015784b622fa)] -&gt; xpath:  //div[@id=&apos;cart&apos;]/button]
-Session ID: 185cf89c848455bd201b015784b622fa
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at com.tutorialsninja.qa.pageObjects.SearchResultPageObjects.cartButtonInBlackColour(SearchResultPageObjects.java:110)
-	at com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartAddingProductToCartFromSearchPage(TestAddToCart.java:81)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestAddToCart@630b6190</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword()'><b>verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;input-password&apos;]/following::div[1]&quot;}
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2441c30c852d88df764b8fc933d8c94d, findElement {using=xpath, value=//input[@id=&apos;input-password&apos;]/following::div[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62587/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2441c30c852d88df764b8fc933d8c94d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
-	at com.tutorialsninja.qa.pageObjects.RegisterPageObjects.passwordActualWarningMessage(RegisterPageObjects.java:88)
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword(TestRegister.java:245)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1533987146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1533987146'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;input-password&apos;]/following::div[1]&quot;}
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2441c30c852d88df764b8fc933d8c94d, findElement {using=xpath, value=//input[@id=&apos;input-password&apos;]/following::div[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62587/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2441c30c852d88df764b8fc933d8c94d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
-	at com.tutorialsninja.qa.pageObjects.RegisterPageObjects.passwordActualWarningMessage(RegisterPageObjects.java:88)
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword(TestRegister.java:245)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>12</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed()'><b>verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td><div><pre>java.lang.AssertionError: did not expect [    test    ] but found [    test    ]
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed(TestRegister.java:263)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1331139970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1331139970'><pre>java.lang.AssertionError: did not expect [    test    ] but found [    test    ]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failEquals(Assert.java:1417)
-	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
-	at org.testng.Assert.assertNotEquals(Assert.java:2033)
-	at org.testng.Assert.assertNotEquals(Assert.java:2055)
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed(TestRegister.java:263)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5f2de715</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingSpacesInTheFields()'><b>verifyRegisteringAnAccountByProvidingSpacesInTheFields</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
 <td><div><pre>java.lang.AssertionError: expected [Telephone must be between 3 and 32 characters!] but found [Password]
 	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingSpacesInTheFields(TestRegister.java:224)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace222556677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace222556677'><pre>java.lang.AssertionError: expected [Telephone must be between 3 and 32 characters!] but found [Password]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1631018495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1631018495'><pre>java.lang.AssertionError: expected [Telephone must be between 3 and 32 characters!] but found [Password]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -382,64 +503,19 @@ Session ID: 2441c30c852d88df764b8fc933d8c94d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource()'><b>verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td><div><pre>java.lang.AssertionError: did not expect [xyzabc123   ] but found [xyzabc123   ]
-	at com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource(TestLogin.java:190)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1206255692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1206255692'><pre>java.lang.AssertionError: did not expect [xyzabc123   ] but found [xyzabc123   ]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failEquals(Assert.java:1417)
-	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
-	at org.testng.Assert.assertNotEquals(Assert.java:2033)
-	at org.testng.Assert.assertNotEquals(Assert.java:2055)
-	at com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource(TestLogin.java:190)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
 <td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers()'><b>verifyRegisteringAnAccountByInvalidPhonenumbers</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: 111</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword()'><b>verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td><div><pre>java.lang.AssertionError: Account got created without password complexity expected [false] but found [true]
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword(TestRegister.java:249)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199871622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace199871622'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409112532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409112532'><pre>java.lang.AssertionError: Account got created without password complexity expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountToCheckPageFollowingComplexityStandardsPassword(TestRegister.java:249)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -469,58 +545,15 @@ Session ID: 2441c30c852d88df764b8fc933d8c94d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers()'><b>verifyRegisteringAnAccountByInvalidPhonenumbers</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: abcde</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1761250981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1761250981'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidPhonenumbers(TestRegister.java:196)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
+<td>4</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordWithoutProvidingEmailAddress()'><b>verifyForgetPasswordWithoutProvidingEmailAddress</b><br>Test class: com.tutorialsninja.qa.testCases.TestForgetPassword</td>
 <td><div><pre>java.lang.AssertionError: E-Mail must be between 4 and 20 characters!&apos; should be displayed for &apos;E-Mail Address&apos; field expected [true] but found [false]
 	at com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordWithoutProvidingEmailAddress(TestForgetPassword.java:119)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1050609248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1050609248'><pre>java.lang.AssertionError: E-Mail must be between 4 and 20 characters!&apos; should be displayed for &apos;E-Mail Address&apos; field expected [true] but found [false]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace721728157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace721728157'><pre>java.lang.AssertionError: E-Mail must be between 4 and 20 characters!&apos; should be displayed for &apos;E-Mail Address&apos; field expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertTrue(Assert.java:56)
@@ -554,8 +587,96 @@ Session ID: 2441c30c852d88df764b8fc933d8c94d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5922d3e9</td></tr>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5f2de715</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationAndBrowsingBack()'><b>verifyLoggingOutFromApplicationAndBrowsingBack</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
+<td><div><pre>java.lang.AssertionError: did not expect [My Account] but found [My Account]
+	at com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationAndBrowsingBack(TestLogout.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243329878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1243329878'><pre>java.lang.AssertionError: did not expect [My Account] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failEquals(Assert.java:1417)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+	at org.testng.Assert.assertNotEquals(Assert.java:2033)
+	at org.testng.Assert.assertNotEquals(Assert.java:2055)
+	at com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationAndBrowsingBack(TestLogout.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestLogout@24313fcc</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed()'><b>verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td><div><pre>java.lang.AssertionError: did not expect [    test    ] but found [    test    ]
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed(TestRegister.java:267)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1066026148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1066026148'><pre>java.lang.AssertionError: did not expect [    test    ] but found [    test    ]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failEquals(Assert.java:1417)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+	at org.testng.Assert.assertNotEquals(Assert.java:2033)
+	at org.testng.Assert.assertNotEquals(Assert.java:2055)
+	at com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWhetherLeadingandTrailingSpacesTrimmed(TestRegister.java:267)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -566,275 +687,639 @@ Session ID: 2441c30c852d88df764b8fc933d8c94d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByFillingPasswordAndWithoutFillingConfirmPassword()'><b>verifyRegisteringAnAccountByFillingPasswordAndWithoutFillingConfirmPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
 <td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountBySelectingNewsletterNOYES()'><b>verifyRegisteringAnAccountBySelectingNewsletterNOYES</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
 <td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidPasswordAndInvalidUserName()'><b>verifyLoginToApplicationWithValidPasswordAndInvalidUserName</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckUserIsAbleToNavigateToOtherPages()'><b>verifyLoginToApplicationCheckUserIsAbleToNavigateToOtherPages</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingAllField()'><b>verifyRegisteringAnAccountByProvidingAllField</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
 <td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestAddToCart.VerifyAddToCartAddingProductFromWishList()'><b>VerifyAddToCartAddingProductFromWishList</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestAddToCart@630b6190</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationAfterLogoutFromOneAccountImmediatelyLoginFromAnotherAccount()'><b>verifyLoggingOutFromApplicationAfterLogoutFromOneAccountImmediatelyLoginFromAnotherAccount</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestLogout@7d20d0b</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidCredential()'><b>verifyLoginToApplicationWithValidCredential</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountBySelectingNewsletterNO()'><b>verifyRegisteringAnAccountBySelectingNewsletterNO</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidEmails()'><b>verifyRegisteringAnAccountByInvalidEmails</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: test@, 12345</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingUsingTextFromProductDescription()'><b>verifySearchingUsingTextFromProductDescription</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword()'><b>verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>7</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingForProductAfterLoginToApplication()'><b>verifySearchingForProductAfterLoginToApplication</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddtoCartByAddingProductToCartFromProductComparisonPage()'><b>verifyAddtoCartByAddingProductToCartFromProductComparisonPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestAddToCart@630b6190</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingDifferentPasswordInPasswordAndConfirmPassword()'><b>verifyRegisteringAnAccountByProvidingDifferentPasswordInPasswordAndConfirmPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPassword()'><b>verifyLoginToApplicationAfterChangingPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>5</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingExistingAccount()'><b>verifyRegisteringAnAccountByProvidingExistingAccount</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringNotificationMessagesForMandatoryFieldBYNotProvidingFileds()'><b>verifyRegisteringNotificationMessagesForMandatoryFieldBYNotProvidingFileds</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartProductToCartFromRelatedProductsSectionOfProductDisplayPage()'><b>verifyAddToCartProductToCartFromRelatedProductsSectionOfProductDisplayPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestAddToCart@630b6190</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingWithExistingProductName()'><b>verifySearchingWithExistingProductName</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingBySelectingCategoryOfProduct()'><b>verifySearchingBySelectingCategoryOfProduct</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountCheckPrivacyPolicyCheckboxIsNotSelectedByDefault()'><b>verifyRegisteringAnAccountCheckPrivacyPolicyCheckboxIsNotSelectedByDefault</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingWithSearchingCriteria()'><b>verifySearchingWithSearchingCriteria</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingBySelectingSearchInSubcategories()'><b>verifySearchingBySelectingSearchInSubcategories</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartAddingProductToCartFromTheProductsDisplayedInCategoryOrSubCategory()'><b>verifyAddToCartAddingProductToCartFromTheProductsDisplayedInCategoryOrSubCategory</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestAddToCart@630b6190</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationFromMyAccountDropdown()'><b>verifyLoggingOutFromApplicationFromMyAccountDropdown</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogout@7d20d0b</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayedBeforeLoginToAccountInAccountDrodown()'><b>verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayedBeforeLoginToAccountInAccountDrodown</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
-<td></td>
-<td>10</td>
-<td>com.tutorialsninja.qa.testCases.TestLogout@7d20d0b</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckForgettenPasswordLinkIsPresnetAndClickable()'><b>verifyLoginToApplicationCheckForgettenPasswordLinkIsPresnetAndClickable</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordWithNonRegisteredAccount()'><b>verifyForgetPasswordWithNonRegisteredAccount</b><br>Test class: com.tutorialsninja.qa.testCases.TestForgetPassword</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5922d3e9</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidUserNameInvalidPassword()'><b>verifyLoginToApplicationWithValidUserNameInvalidPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingWithNonExistingProductName()'><b>verifySearchingWithNonExistingProductName</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordCheckLoggingIntoApplicationWithOldPasswordAfterResettingPasswordIntitiatedProcess()'><b>verifyForgetPasswordCheckLoggingIntoApplicationWithOldPasswordAfterResettingPasswordIntitiatedProcess</b><br>Test class: com.tutorialsninja.qa.testCases.TestForgetPassword</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5922d3e9</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWithoutSelectingPrivacyPolicyCheckbox()'><b>verifyRegisteringAnAccountWithoutSelectingPrivacyPolicyCheckbox</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
-<td></td>
-<td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationFromLogoutOptionOnPage()'><b>verifyLoggingOutFromApplicationFromLogoutOptionOnPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogout@7d20d0b</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartByAddingProductToCartFromProductDisplayPage()'><b>verifyAddToCartByAddingProductToCartFromProductDisplayPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
-<td></td>
-<td>4</td>
-<td>com.tutorialsninja.qa.testCases.TestAddToCart@630b6190</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationByCopyingPasswordFiledText()'><b>verifyLoginToApplicationByCopyingPasswordFiledText</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithInvalidCredential()'><b>verifyLoginToApplicationWithInvalidCredential</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
 <td></td>
 <td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingWithNonExistingProductName()'><b>verifySearchingWithNonExistingProductName</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
 <td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingViewListAndGridWhenOnePrdouctDisplayed()'><b>verifySearchingViewListAndGridWhenOnePrdouctDisplayed</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
-<td></td>
-<td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidEmails()'><b>verifyRegisteringAnAccountByInvalidEmails</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: test, 12345</td>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingBySelectingCategoryOfProduct()'><b>verifySearchingBySelectingCategoryOfProduct</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
 <td></td>
 <td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidUserNameInvalidPassword()'><b>verifyLoginToApplicationWithValidUserNameInvalidPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationFromLogoutOptionOnPage()'><b>verifyLoggingOutFromApplicationFromLogoutOptionOnPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogout@24313fcc</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidPasswordAndInvalidUserName()'><b>verifyLoginToApplicationWithValidPasswordAndInvalidUserName</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckForgettenPasswordLinkIsPresnetAndClickable()'><b>verifyLoginToApplicationCheckForgettenPasswordLinkIsPresnetAndClickable</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
 <td></td>
 <td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingWithSearchingCriteria()'><b>verifySearchingWithSearchingCriteria</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestAddToCart.VerifyAddToCartAddingProductFromWishList()'><b>VerifyAddToCartAddingProductFromWishList</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
+<td></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestAddToCart@7d57dbb5</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartByAddingProductToCartFromProductDisplayPage()'><b>verifyAddToCartByAddingProductToCartFromProductDisplayPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestAddToCart@7d57dbb5</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingWithotProvidingAnyProductName()'><b>verifySearchingWithotProvidingAnyProductName</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
 <td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestSearch@7d57dbb5</td></tr>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingMandatoryField()'><b>verifyRegisteringAnAccountByProvidingMandatoryField</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingUsingTextFromProductDescription()'><b>verifySearchingUsingTextFromProductDescription</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationFromMyAccountDropdown()'><b>verifyLoggingOutFromApplicationFromMyAccountDropdown</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestLogout@24313fcc</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidEmails()'><b>verifyRegisteringAnAccountByInvalidEmails</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: test@, 12345</td>
 <td></td>
 <td>3</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithoutProvidingAnyCredentials()'><b>verifyLoginToApplicationWithoutProvidingAnyCredentials</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
 <td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByFillingPasswordAndWithoutFillingConfirmPassword()'><b>verifyRegisteringAnAccountByFillingPasswordAndWithoutFillingConfirmPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
 <td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testCases.TestLogin@24313fcc</td></tr>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidEmails()'><b>verifyRegisteringAnAccountByInvalidEmails</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: test@gmail., 12345</td>
 <td></td>
 <td>2</td>
-<td>com.tutorialsninja.qa.testCases.TestRegister@4b2bac3f</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartAddingProductToCartFromTheProductsDisplayedInCategoryOrSubCategory()'><b>verifyAddToCartAddingProductToCartFromTheProductsDisplayedInCategoryOrSubCategory</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
+<td></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestAddToCart@7d57dbb5</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountWithoutSelectingPrivacyPolicyCheckbox()'><b>verifyRegisteringAnAccountWithoutSelectingPrivacyPolicyCheckbox</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayedBeforeLoginToAccountInAccountDrodown()'><b>verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayedBeforeLoginToAccountInAccountDrodown</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
+<td></td>
+<td>10</td>
+<td>com.tutorialsninja.qa.testCases.TestLogout@24313fcc</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountBySelectingNewsletterNO()'><b>verifyRegisteringAnAccountBySelectingNewsletterNO</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>4</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingMandatoryField()'><b>verifyRegisteringAnAccountByProvidingMandatoryField</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>5</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingForProductAfterLoginToApplication()'><b>verifySearchingForProductAfterLoginToApplication</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingViewListAndGridWhenOnePrdouctDisplayed()'><b>verifySearchingViewListAndGridWhenOnePrdouctDisplayed</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
+<td></td>
+<td>5</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingExistingAccount()'><b>verifyRegisteringAnAccountByProvidingExistingAccount</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartProductToCartFromRelatedProductsSectionOfProductDisplayPage()'><b>verifyAddToCartProductToCartFromRelatedProductsSectionOfProductDisplayPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestAddToCart@7d57dbb5</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingWithExistingProductName()'><b>verifySearchingWithExistingProductName</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
 <tr>
 <td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayBeforeLoginUnderRightColumn()'><b>verifyLoggingOutFromApplicationLogoutOptionShouldNotDisplayBeforeLoginUnderRightColumn</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
 <td></td>
 <td>10</td>
-<td>com.tutorialsninja.qa.testCases.TestLogout@7d20d0b</td></tr>
+<td>com.tutorialsninja.qa.testCases.TestLogout@24313fcc</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByInvalidEmails()'><b>verifyRegisteringAnAccountByInvalidEmails</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister<br>Parameters: test, 12345</td>
+<td></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordWithNonRegisteredAccount()'><b>verifyForgetPasswordWithNonRegisteredAccount</b><br>Test class: com.tutorialsninja.qa.testCases.TestForgetPassword</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5f2de715</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountCheckPrivacyPolicyCheckboxIsNotSelectedByDefault()'><b>verifyRegisteringAnAccountCheckPrivacyPolicyCheckboxIsNotSelectedByDefault</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringNotificationMessagesForMandatoryFieldBYNotProvidingFileds()'><b>verifyRegisteringNotificationMessagesForMandatoryFieldBYNotProvidingFileds</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddToCartAddingProductToCartFromSearchPage()'><b>verifyAddToCartAddingProductToCartFromSearchPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestAddToCart@7d57dbb5</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingAllField()'><b>verifyRegisteringAnAccountByProvidingAllField</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>4</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestSearch.verifySearchingBySelectingSearchInSubcategories()'><b>verifySearchingBySelectingSearchInSubcategories</b><br>Test class: com.tutorialsninja.qa.testCases.TestSearch</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestSearch@5922d3e9</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogout.verifyLoggingOutFromApplicationAfterLogoutFromOneAccountImmediatelyLoginFromAnotherAccount()'><b>verifyLoggingOutFromApplicationAfterLogoutFromOneAccountImmediatelyLoginFromAnotherAccount</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogout</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestLogout@24313fcc</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestAddToCart.verifyAddtoCartByAddingProductToCartFromProductComparisonPage()'><b>verifyAddtoCartByAddingProductToCartFromProductComparisonPage</b><br>Test class: com.tutorialsninja.qa.testCases.TestAddToCart</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestAddToCart@7d57dbb5</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithValidCredential()'><b>verifyLoginToApplicationWithValidCredential</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestRegister.verifyRegisteringAnAccountByProvidingDifferentPasswordInPasswordAndConfirmPassword()'><b>verifyRegisteringAnAccountByProvidingDifferentPasswordInPasswordAndConfirmPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestRegister</td>
+<td></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestRegister@4d1c00d0</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt()'><b>verifyLoginToApplicationWithMultipleTimeUnsuccessfulLoginAttempt</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestForgetPassword.verifyForgetPasswordCheckLoggingIntoApplicationWithOldPasswordAfterResettingPasswordIntitiatedProcess()'><b>verifyForgetPasswordCheckLoggingIntoApplicationWithOldPasswordAfterResettingPasswordIntitiatedProcess</b><br>Test class: com.tutorialsninja.qa.testCases.TestForgetPassword</td>
+<td></td>
+<td>3</td>
+<td>com.tutorialsninja.qa.testCases.TestForgetPassword@5f2de715</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckUserIsAbleToNavigateToOtherPages()'><b>verifyLoginToApplicationCheckUserIsAbleToNavigateToOtherPages</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1867769955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1867769955'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationByCopyingPasswordFiledText()'><b>verifyLoginToApplicationByCopyingPasswordFiledText</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913298379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913298379'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource()'><b>verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace177420773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177420773'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPassword()'><b>verifyLoginToApplicationAfterChangingPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2034291323", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2034291323'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2b1fd4ff7af2dc94c8a5b8b0925c0166, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:56857}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Users\Zuber\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56857/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b1fd4ff7af2dc94c8a5b8b0925c0166
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at com.tutorialsninja.qa.conftest.conftest.setup(conftest.java:70)
+	at com.tutorialsninja.qa.testCases.TestLogin.initilization(TestLogin.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword()'><b>verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword</b><br>Test class: com.tutorialsninja.qa.testCases.TestLogin</td>
+<td><div><pre>java.lang.Throwable: Method com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword() on instance com.tutorialsninja.qa.testCases.TestLogin@5e5d171f depends on not successfully finished methods 
+[com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPassword() on instance com.tutorialsninja.qa.testCases.TestLogin@5e5d171f]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27905604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27905604'><pre>java.lang.Throwable: Method com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword() on instance com.tutorialsninja.qa.testCases.TestLogin@5e5d171f depends on not successfully finished methods 
+[com.tutorialsninja.qa.testCases.TestLogin.verifyLoginToApplicationAfterChangingPassword() on instance com.tutorialsninja.qa.testCases.TestLogin@5e5d171f]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testCases.TestLogin@5e5d171f</td></tr>
 </table><p>
 </body>
 </html>

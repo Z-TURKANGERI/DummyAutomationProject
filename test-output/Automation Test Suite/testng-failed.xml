@@ -6,13 +6,34 @@
   </listeners>
   <test thread-count="5" name="Automation Test cases(failed)">
     <classes>
+      <class name="com.tutorialsninja.qa.testCases.TestLogout">
+        <methods>
+          <include name="initilization"/>
+          <include name="verifyLoggingOutFromApplicationAndBrowsingBack"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testCases.TestLogout -->
       <class name="com.tutorialsninja.qa.testCases.TestLogin">
         <methods>
           <include name="initilization"/>
+          <include name="verifyLoginToApplicationAfterChangingPasswordAndChangingBackToOriginalPassword"/>
+          <include name="verifyLoginToApplicationaLoginAfterThatLogoutAndBrowserBackUsingBrowserButtton"/>
+          <include name="verifyLoginToApplicationAfterChangingPassword"/>
+          <include name="verifyLoginToApplicationWithValidCredentialBrowsingBackUsingBrowserBackButton"/>
+          <include name="verifyLoginToApplicationByCopyingPasswordFiledText"/>
           <include name="tearDown"/>
           <include name="verifyLoginToApplicationCheckPasswordIsNotVisibleInPageSource"/>
+          <include name="verifyLoginToApplicationCheckUserIsAbleToNavigateToOtherPages"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestLogin -->
+      <class name="com.tutorialsninja.qa.testCases.TestForgetPassword">
+        <methods>
+          <include name="initlization"/>
+          <include name="verifyForgetPasswordWithoutProvidingEmailAddress"/>
+          <include name="tearDown"/>
+          <include name="verifyForgetPasswordUserAbleToRestorePassword"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testCases.TestForgetPassword -->
       <class name="com.tutorialsninja.qa.testCases.TestRegister">
         <methods>
           <include name="verifyRegisteringAnAccountByInvalidPhonenumbers" invocation-numbers="0 1"/>
@@ -23,21 +44,6 @@
           <include name="verifyRegisteringAnAccountByProvidingSpacesInTheFields"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testCases.TestRegister -->
-      <class name="com.tutorialsninja.qa.testCases.TestAddToCart">
-        <methods>
-          <include name="tearDown"/>
-          <include name="initilization"/>
-          <include name="verifyAddToCartAddingProductToCartFromSearchPage"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.qa.testCases.TestAddToCart -->
-      <class name="com.tutorialsninja.qa.testCases.TestForgetPassword">
-        <methods>
-          <include name="initlization"/>
-          <include name="verifyForgetPasswordWithoutProvidingEmailAddress"/>
-          <include name="tearDown"/>
-          <include name="verifyForgetPasswordUserAbleToRestorePassword"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.qa.testCases.TestForgetPassword -->
     </classes>
   </test> <!-- Automation Test cases(failed) -->
 </suite> <!-- Failed suite [Automation Test Suite] -->
